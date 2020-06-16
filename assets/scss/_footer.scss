@@ -1,0 +1,132 @@
+footer {
+  margin: 30px;
+  display: grid;
+  align-items: center;
+  font-size: 14px;
+  grid-column-gap: 20px;
+  grid-template-areas: 
+  'brand about'
+  'info sections'
+  'questions socialMedia'
+  'sectionQuestions social'
+  'copyrights copyrights';
+
+  .footerTitleSections {
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: 1rem;
+
+    a {
+      color: black;
+    }
+
+    &:nth-child(even) {
+      text-align: right;
+    }
+
+  }
+
+
+  #brand {
+    grid-area: brand;
+    padding: 20px 0;
+  }
+
+  #about {
+    grid-area: about;
+  }
+
+  #questions {
+    grid-area: questions;
+  }
+
+  #help {
+    grid-area: questions;
+  }
+
+  #socialMedia {
+    grid-area: socialMedia;
+  }
+
+  .footerInfo {
+    padding: 20px 0;
+    line-height: 2;
+    grid-area: info;
+  }
+
+  .footerSections {
+    padding: 20px 0;
+    line-height: 2;
+    text-align: right;
+    grid-area: sections
+  }
+  
+  .sectionsQuestions {
+    padding: 20px 0;
+    line-height: 2;
+    grid-area: sectionQuestions;
+  }
+
+  .social {
+    font-size: 30px;
+    grid-area: social;
+    text-align: right;
+    
+    .icons {
+      padding: 5px;
+      color: $primary-color;
+
+      .fab {
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  .copyrights {
+    text-align: center;
+    line-height: 2;
+    grid-area: copyrights;
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    grid-template-areas: 
+      'brand about questions socialMedia'
+      'info sections sectionQuestions social'
+      'copyrights copyrights copyrights copyrights'
+    ;
+    grid-row-gap: 40px;
+    align-items: flex-start;
+
+    .footerTitleSections:nth-child(even),
+    .footerTitleSections:nth-child(3),
+    .footerSections,
+    .sectionsQuestions {
+      text-align: center;
+    }
+
+    .social {
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+      
+      .icons {
+        padding: 0 10px;
+      }
+    }
+
+    .footerInfo,
+    .footerSections,
+    .sectionsQuestions,
+    #brand {
+      padding: 0;
+    }
+  }
+
+}

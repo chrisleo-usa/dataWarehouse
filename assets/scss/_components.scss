@@ -1,0 +1,23 @@
+.btn {
+  padding: 12px 25px;
+  background-color: $primary-color;
+  align-self: center;
+  color: #ffffff;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.53)
+}
+
+.navBtn {
+  color: black;
+  background-color: white;
+  font-size: 15px;
+  padding: 12px 18px;
+  white-space: nowrap;
+
+  .fa-long-arrow-alt-right {
+    color: $primary-color;
+    margin-left: 5px;
+  }
+}
+
