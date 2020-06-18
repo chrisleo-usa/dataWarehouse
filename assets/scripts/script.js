@@ -29,7 +29,7 @@ menuBtn.addEventListener('click', () => {
     menuOpen = true;
   } else {
     menuBtn.classList.remove('open');
-    slider.style.right = '-50%';
+    slider.style.right = '-40%';
     menuOpen = false;
   }
 })  
