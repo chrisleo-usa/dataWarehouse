@@ -43,14 +43,10 @@ let logo = document.querySelector('h1 a img');
 function scrollFunction() {
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     navBar.style.backgroundColor = '#f7faff';
-    menuBtn.style.width = '40px';
-    menuBtn.style.height = '40px';
-    logo.style.width = '80%'
+
   } else {
     navBar.style.backgroundColor = 'transparent';
-    logo.style.width = '90%'
-    menuBtn.style.width = '45px';
-    menuBtn.style.height = '45px';
+
   }
 }
 //=============
